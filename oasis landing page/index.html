@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="square"></div>
+        <header>
+            <a href="#" class="logo"><img src="c.png"></a>
+            <ul>
+                <li><a href="#"><b>Home</b></a> </li>
+                <li><a href="#"><b> Menu</b></a> </li>
+                <li><a href="#"><b>What's New</b></a> </li>
+                <li><a href="#"><b>Contact</b></a> </li>
+            </ul>
+
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Discover the <span>Fragnance</span> of Elegance</h2><br>
+                <p><b>Intricate symphonies of fragrance, The essence of your success. Walk with confidence with the power of eminence.<br>An intimate expression of style.</b></p>                                
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="a.png" class="perfume">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="a.png" onclick="imgSlider('a.png');changeCircleColor('#f38484')" class= "qwe" ></li>
+            <li><img src="f.png" onclick="imgSlider('f.png');changeCircleColor('#615e5e')" class="abc"></li>
+            <li><img src="b.png" onclick="imgSlider('b.png');changeCircleColor('#438ae7')" class="abc"></li>
+        </ul>
+        <ul class="ico">
+            <li><a href="#"><img src="g.png" class="mnb"> </a></li>
+            <li><a href="#"><img src="h.png" class="mnb"> </a></li>
+            <li><a href="#"><img src="i.png" class="mnb"> </a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function  imgSlider(anything){
+            document.querySelector('.perfume').src=anything;
+        }
+        
+        function changeCircleColor(color){
+            const circle=document.querySelector('.square');
+            circle.style.background=color;
+        }
+    </script>
+
+</body>
+</html>
